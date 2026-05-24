@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кабинет — ZAJ BANK</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-authenticated" data-page="private" data-section="dashboard">
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Основная навигация">
+        <a class="brand" href="dashboard.html" aria-label="ZAJ BANK">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span><strong>ZAJ</strong><small>BANK</small></span>
+        </a>
+        <nav class="nav-list">
+          <a class="nav-item is-active" href="dashboard.html"><svg><use href="icons.svg#icon-home"></use></svg><span>Кабинет</span></a>
+          <a class="nav-item" href="accounts.html"><svg><use href="icons.svg#icon-wallet"></use></svg><span>Счета</span></a>
+          <a class="nav-item" href="transfer.html"><svg><use href="icons.svg#icon-transfer"></use></svg><span>Переводы</span></a>
+          <a class="nav-item" href="payments.html"><svg><use href="icons.svg#icon-receipt"></use></svg><span>Платежи</span></a>
+          <a class="nav-item" href="programs.html"><svg><use href="icons.svg#icon-building"></use></svg><span>Госпрограммы</span></a>
+          <a class="nav-item" href="market.html"><svg><use href="icons.svg#icon-market"></use></svg><span>Маркет</span></a>
+          <a class="nav-item" href="history.html"><svg><use href="icons.svg#icon-receipt"></use></svg><span>История</span></a>
+          <a class="nav-item" href="security.html"><svg><use href="icons.svg#icon-shield"></use></svg><span>Защита</span></a>
+        </nav>
+        <section class="sidebar-status"><span class="status-dot"></span><p data-session-label>Сессия активна</p><strong data-session-state>Online</strong></section>
+      </aside>
+      <main class="workspace">
+        <header class="topbar">
+          <div class="page-heading"><p class="eyebrow" data-page-kicker>защищенный контур</p><h1 data-page-title>ZAJ BANK</h1></div>
+          <form class="search" role="search" id="searchForm"><svg><use href="icons.svg#icon-search"></use></svg><label class="sr-only" for="searchInput">Поиск</label><input id="searchInput" type="search" placeholder="Найти счет, перевод, выплату, защиту" /></form>
+          <div class="top-actions">
+            <button class="icon-button" id="privacyToggle" type="button" aria-label="Скрыть суммы"><svg><use href="icons.svg#icon-eye"></use></svg></button>
+            <button class="icon-button" type="button" aria-label="Уведомления"><svg><use href="icons.svg#icon-bell"></use></svg></button>
+            <button class="profile-button" type="button" aria-label="Профиль"><span data-profile-letter>Z</span></button>
+            <button class="icon-button" id="logoutButton" type="button" aria-label="Выйти"><svg><use href="icons.svg#icon-log-out"></use></svg></button>
+          </div>
+        </header>
+        <section class="private-view" id="privateView"></section>
+      </main>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

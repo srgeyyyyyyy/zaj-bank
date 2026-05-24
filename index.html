@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAJ BANK — защищенный онлайн-банк</title>
+    <meta
+      name="description"
+      content="ZAJ BANK — онлайн-банк с личным кабинетом, счетами, переводами и государственными выплатами."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-locked" data-page="home">
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Основная навигация">
+        <a class="brand" href="index.html" aria-label="ZAJ BANK">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>
+            <strong>ZAJ</strong>
+            <small>BANK</small>
+          </span>
+        </a>
+
+        <nav class="nav-list">
+          <a class="nav-item is-active" href="#about">
+            <svg><use href="icons.svg#icon-home"></use></svg>
+            <span>Главная</span>
+          </a>
+          <button class="nav-item" type="button" data-private-link="dashboard.html">
+            <svg><use href="icons.svg#icon-user"></use></svg>
+            <span>Кабинет</span>
+          </button>
+          <button class="nav-item" type="button" data-private-link="accounts.html">
+            <svg><use href="icons.svg#icon-wallet"></use></svg>
+            <span>Счета</span>
+          </button>
+          <button class="nav-item" type="button" data-private-link="transfer.html">
+            <svg><use href="icons.svg#icon-transfer"></use></svg>
+            <span>Переводы</span>
+          </button>
+          <button class="nav-item" type="button" data-private-link="payments.html">
+            <svg><use href="icons.svg#icon-receipt"></use></svg>
+            <span>Платежи</span>
+          </button>
+          <button class="nav-item" type="button" data-private-link="programs.html">
+            <svg><use href="icons.svg#icon-building"></use></svg>
+            <span>Госпрограммы</span>
+          </button>
+          <button class="nav-item" type="button" data-private-link="security.html">
+            <svg><use href="icons.svg#icon-shield"></use></svg>
+            <span>Защита</span>
+          </button>
+          <button class="nav-item" type="button" data-scroll-target="#market">
+            <svg><use href="icons.svg#icon-market"></use></svg>
+            <span>Маркет</span>
+          </button>
+          <button class="nav-item" type="button" data-private-link="history.html">
+            <svg><use href="icons.svg#icon-receipt"></use></svg>
+            <span>История</span>
+          </button>
+        </nav>
+
+        <section class="sidebar-status" aria-label="Статус доступа">
+          <span class="status-dot"></span>
+          <p>Доступ закрыт</p>
+          <strong>Вход</strong>
+        </section>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar home-topbar">
+          <div class="page-heading">
+            <p class="eyebrow">защищенный контур</p>
+            <h1>ZAJ BANK</h1>
+          </div>
+
+          <div class="top-actions">
+            <a class="text-button is-strong" href="login.html?mode=register">Присоединиться</a>
+          </div>
+        </header>
+
+        <section class="home-stack">
+          <article class="home-hero panel-dark" id="about">
+            <div class="brand-visual" aria-hidden="true">
+              <span class="brand-visual-card"></span>
+              <span class="brand-visual-line"></span>
+              <span class="brand-visual-chip"></span>
+            </div>
+            <div class="auth-hero-copy">
+              <p class="eyebrow">государство → zaj bank → граждане</p>
+              <h2>Онлайн-банк для счетов, переводов, выплат и покупок в одном защищенном контуре.</h2>
+              <p class="hero-subcopy">
+                На главной можно спокойно посмотреть, что есть внутри. Личные данные и действия
+                откроются только после подтверждения телефона.
+              </p>
+              <div class="trust-strip" aria-label="Ключевые принципы">
+                <span>SMS-подтверждение</span>
+                <span>SQLite локально</span>
+                <span>Банковская сессия</span>
+                <span>ZAJ Маркет</span>
+              </div>
+            </div>
+          </article>
+
+          <section class="walkthrough panel" aria-label="Как работает ZAJ BANK">
+            <div>
+              <p class="eyebrow">как пользоваться</p>
+              <h2>Сначала человек понимает сервис, потом входит только при действии.</h2>
+            </div>
+            <ol class="walkthrough-list">
+              <li>
+                <span>1</span>
+                <strong>Смотрит возможности</strong>
+                <small>Счета, переводы, госпрограммы и маркет видны на главной.</small>
+              </li>
+              <li>
+                <span>2</span>
+                <strong>Нажимает на функцию</strong>
+                <small>Любое закрытое действие переводит на отдельную страницу доступа.</small>
+              </li>
+              <li>
+                <span>3</span>
+                <strong>Подтверждает телефон</strong>
+                <small>Вход или регистрация проходят через SMS-код.</small>
+              </li>
+            </ol>
+          </section>
+
+          <section class="feature-grid" aria-label="Функции ZAJ BANK">
+            <article class="feature-card panel" data-private-link="accounts.html">
+              <span class="feature-icon"><svg><use href="icons.svg#icon-wallet"></use></svg></span>
+              <p class="eyebrow">деньги</p>
+              <h2>Счета</h2>
+              <p>Баланс, доходы, кэшбэк и история движений открываются только после входа.</p>
+            </article>
+            <article class="feature-card panel" data-private-link="transfer.html">
+              <span class="feature-icon amber"><svg><use href="icons.svg#icon-transfer"></use></svg></span>
+              <p class="eyebrow">операции</p>
+              <h2>Переводы</h2>
+              <p>Отправка денег по телефону, имени или ИИН внутри личного кабинета.</p>
+            </article>
+            <article class="feature-card panel" data-private-link="payments.html">
+              <span class="feature-icon"><svg><use href="icons.svg#icon-receipt"></use></svg></span>
+              <p class="eyebrow">сервисы</p>
+              <h2>Платежи</h2>
+              <p>Налоги, ЖКХ, школа и транспорт оплачиваются на отдельной странице.</p>
+            </article>
+            <article class="feature-card panel" data-private-link="programs.html">
+              <span class="feature-icon blue"><svg><use href="icons.svg#icon-building"></use></svg></span>
+              <p class="eyebrow">государство</p>
+              <h2>Госпрограммы</h2>
+              <p>Выплаты, льготы, субсидии и статусы заявок в одной банковской системе.</p>
+            </article>
+            <article class="feature-card panel" data-scroll-target="#market">
+              <span class="feature-icon clay"><svg><use href="icons.svg#icon-market"></use></svg></span>
+              <p class="eyebrow">покупки</p>
+              <h2>Маркет</h2>
+              <p>Поиск товаров как в маркетплейсе, чтобы банк был не только про счета.</p>
+            </article>
+            <article class="feature-card panel" data-private-link="history.html">
+              <span class="feature-icon blue"><svg><use href="icons.svg#icon-receipt"></use></svg></span>
+              <p class="eyebrow">контроль</p>
+              <h2>История</h2>
+              <p>Операции, платежи и покупки собраны отдельно от главного экрана.</p>
+            </article>
+          </section>
+
+          <section class="about-grid">
+            <article class="panel panel-pad">
+              <p class="eyebrow">кто мы</p>
+              <h2>ZAJ BANK соединяет государственные сервисы и обычные банковские задачи.</h2>
+              <p class="muted-copy">
+                Сайт показывает открытые возможности сразу, но персональные данные, операции и счета
+                остаются закрытыми до подтверждения телефона.
+              </p>
+            </article>
+            <article class="panel panel-pad">
+              <p class="eyebrow">как это работает</p>
+              <div class="flow-line" aria-label="Маршрут сервиса">
+                <span>Государство</span>
+                <b></b>
+                <span>ZAJ BANK</span>
+                <b></b>
+                <span>Граждане</span>
+              </div>
+              <p class="muted-copy">
+                Банк становится понятным шлюзом: выплаты и сервисы приходят в кабинет,
+                а покупки и платежи живут рядом.
+              </p>
+            </article>
+          </section>
+
+          <section class="public-search panel" aria-label="Поиск по ZAJ BANK">
+            <div>
+              <p class="eyebrow">единый поиск</p>
+              <h2>Найдите счет, перевод, выплату или товар.</h2>
+            </div>
+            <form class="search" role="search" id="searchForm">
+              <svg><use href="icons.svg#icon-search"></use></svg>
+              <label class="sr-only" for="searchInput">Поиск по сервисам и товарам</label>
+              <input id="searchInput" type="search" placeholder="Например: счет, перевод, субсидия, iPhone, наушники" />
+            </form>
+          </section>
+
+          <section class="market-section panel" id="market">
+            <div class="market-head">
+              <div>
+                <p class="eyebrow">zaj market</p>
+                <h2>Маркетплейс внутри банка</h2>
+                <p>Каталог для будущих покупок, поиска товаров и оплаты через ZAJ BANK.</p>
+              </div>
+              <form class="search market-search" role="search" id="marketSearchForm">
+                <svg><use href="icons.svg#icon-search"></use></svg>
+                <label class="sr-only" for="marketSearchInput">Поиск товаров</label>
+                <input id="marketSearchInput" type="search" placeholder="Искать товар" />
+              </form>
+            </div>
+            <div class="market-grid" id="marketGrid" aria-live="polite"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
